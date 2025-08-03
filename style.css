@@ -65,7 +65,7 @@ body {
   background: #222;
   border: 0;
   color: #fff;
-  /* border: 0.1px solid #222; */
+  border: 0.1px solid #222;
   border-radius: 10px;
   cursor: pointer;
   transition: all .2s;
@@ -76,81 +76,6 @@ body {
   background: #333;
 }
 
-.neon-light{
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: red;
-  position: fixed;
-  box-shadow: -10px 10px 10px red,
-              -15px 10px 20px red;
-  backdrop-filter: blur(20px);
-  animation: box 7s linear alternate-reverse infinite;
-}
-
-.neon-light-2{
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: royalblue;
-  position: fixed;
-  box-shadow: -10px 10px 10px royalblue,
-              -15px 10px 20px royalblue;
-  backdrop-filter: blur(20px);
-  animation: box-2 7s linear alternate-reverse infinite;
-}
-
-.neon-light-3{
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: lime;
-  position: fixed;
-  box-shadow: -10px 10px 10px lime,
-              -15px 10px 20px lime;
-  backdrop-filter: blur(20px);
-  animation: box-3 7s linear alternate-reverse infinite;
-}
-
-@keyframes box {
-  0%{
-    transform: translateY(-70px);
-  }
-  100%{
-    transform: translateY(100px);
-  }
-}
-
-@keyframes box-2 {
-  0%{
-    transform: translateX(-70px);
-  }
-  100%{
-    transform: translateX(100px) translateY(100px);
-  }
-}
-
-@keyframes box-3 {
-  0%{
-    transform: translateZ(-70px);
-  }
-  100%{
-    transform: translateZ(100px) translateX(100px);
-  }
-}
-
-
-.neon-light-2{
-  animation-delay: 1s;
-}
-
-.neon-light-3{
-  animation-delay: 2s;
-}
-
-.neon-light-1{
-  animation-delay: 3s;
-}
 
 @media (max-width:480px){
   .calculator{
